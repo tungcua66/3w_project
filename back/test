@@ -1,0 +1,22 @@
+// const test = {
+//     a: "valueA",
+//     b: "valueB"
+// }
+
+// console.log(test.hasOwnProperty('c'));
+
+const test = '[title,-price]';
+const idealFilter = {};
+const res = test.substring(1, test.length - 1).split(',');
+for (let i = 0; i < res.length; i++) {
+	if (!res[i].startsWith('-')) {
+		res[i] = res[i].concat(':asc');
+	} else {
+		res[i] = res[i].slice(1); console.log(res[i]);
+		res[i] = res[i].concat(':desc');
+	}
+	res[i] = res[i].split(':');
+}
+
+// console.log(Array.isArray(res));
+console.log(typeof res);

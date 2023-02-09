@@ -1,0 +1,53 @@
+module.exports = {
+	env: {
+		browser: false,
+		es6: true,
+	},
+	extends: [
+		'airbnb-base',
+	],
+	globals: {
+		Atomics: 'readonly',
+		SharedArrayBuffer: 'readonly',
+	},
+	parserOptions: {
+		ecmaFeatures: {
+			jsx: false,
+		},
+		ecmaVersion: 12,
+		sourceType: 'module',
+	},
+	rules: {
+		indent: [2, 'tab', {
+			SwitchCase: 1,
+			VariableDeclarator: 1,
+		}],
+		'consistent-return': 0,
+		'implicit-arrow-linebreak': 0,
+		'import/no-cycle': 0,
+		'jsx-a11y/click-events-have-key-events': 'off',
+		'max-classes-per-file': 0,
+		'max-len': ['error', 110],
+		'no-async-promise-executor': 0,
+		'no-await-in-loop': 0,
+		'no-bitwise': 0,
+		'no-cond-assign': 0,
+		'no-console': 'off',
+		'no-constant-condition': 0,
+		'no-loop-func': 0,
+		'no-nested-ternary': 0,
+		'no-param-reassign': 0,
+		'no-plusplus': 0,
+		'no-restricted-globals': 0,
+		'no-restricted-syntax': 0,
+		'no-return-assign': 0,
+		'no-tabs': 0,
+		'no-underscore-dangle': 0,
+		'no-unexpected-multiline': 0,
+		'no-useless-catch': 0,
+		'nonblock-statement-body-position': 0,
+		'object-curly-newline': 0,
+		curly: 0,
+		'import/extensions': 0,
+	},
+};
